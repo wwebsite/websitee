@@ -75,7 +75,22 @@
         position: fixed;
         color: #33bc54;
         margin-left: 10px;
+        margin-top: 0px;
+    }
+    #banner-text2{
+        font-family: 'Bebas Neue', cursive;
+        position: fixed;
+        color: #4fd86f;
+        margin-left: 10px;
+        margin-top: 55px;
+    }
+    #font-awesome{
+        position: fixed;
+        margin-left: 70%;
+        margin-right: 30%;
         margin-top: 10px;
+        display: flex;
+        flex-direction: row;
     }
     .fa-solid{
         font-size: 35px;
@@ -88,6 +103,10 @@
         }
         #banner-text{
             font-size: 30px;
+        }
+        #banner-text2{
+            font-size: 15px;
+            margin-top: 40px;
         }
         #gallery{
             font-size: 20px;
@@ -104,15 +123,19 @@
         }
         .fa-solid{
             font-size: 20px;
+            padding: 5px;
         }
     }
-
         @media screen and (min-width:600px) and (max-width:1000px){
         #welcome-h1{
             font-size: 45px;
         }
         #banner-text{
             font-size: 35px;
+        }
+        #banner-text2{
+            font-size: 20px;
+            margin-top: 40px;
         }
         #gallery{
             font-size: 25px;
@@ -129,6 +152,7 @@
         }
         .fa-solid{
             font-size: 25px;
+            padding: 5px;
         }
     }
     </style>
@@ -136,6 +160,7 @@
 <body>
     <div id="banner">
         <h1 id="banner-text">Evergreen</h1>
+        <h1 id="banner-text2">Tile and flooring</h1>
         <div align="right" id="font-awesome">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <a href="contact.html"><i class="fa-solid fa-rectangle-list"></i></a>
