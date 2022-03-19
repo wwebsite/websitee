@@ -77,17 +77,75 @@
         margin-left: 10px;
         margin-top: 10px;
     }
+    #banner-text2{
+        font-family: 'Bebas Neue', cursive;
+        position: fixed;
+        color: #4fd86f;
+        margin-left: 10px;
+        margin-top: 55px;
+    }
+    #font-awesome{
+        position: fixed;
+        margin-left: 70%;
+        margin-right: 30%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
     .fa-solid{
         font-size: 35px;
         padding: 10px;
         color: #33bc54;
     }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        width: 800px;
+    }
+    .form{
+        height: 25px;
+    }
+    #email{
+        margin-top: 10px;
+        height: 25px;
+    }
+    #name{
+        height: 25px;
+    }
+    #phone{
+        margin-top: 10px;
+        height: 25px;
+    }
+    #message{
+        margin-top: 10px;
+        height: 50px;
+    }
+    button{
+        margin-top: 10px;
+        background-color: #33bc54;
+        color: white;
+        height: 50px;
+    }
+    #h1{
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 100px;
+    }
+
     @media screen and (min-width:0px) and (max-width:600px){
+        #h1{
+            font-size: 40px;
+        }
         #welcome-h1{
             font-size: 40px;
         }
         #banner-text{
             font-size: 30px;
+        }
+        #banner-text2{
+            font-size: 15px;
+            margin-top: 40px;
         }
         #gallery{
             font-size: 20px;
@@ -104,15 +162,29 @@
         }
         .fa-solid{
             font-size: 20px;
+            padding: 5px;
+        }
+        form{
+            width: 250px;
+            margin-top: 50px;
+        }
+        button{
+            height: 35px;
         }
     }
-
         @media screen and (min-width:600px) and (max-width:1000px){
-        #welcome-h1{
+        #h1{
+            font-size: 60px;
+        }
+            #welcome-h1{
             font-size: 45px;
         }
         #banner-text{
             font-size: 35px;
+        }
+        #banner-text2{
+            font-size: 20px;
+            margin-top: 40px;
         }
         #gallery{
             font-size: 25px;
@@ -129,6 +201,14 @@
         }
         .fa-solid{
             font-size: 25px;
+            padding: 5px;
+        }
+        form{
+            width: 500px;
+            margin-top: 50px ;
+        }
+        button{
+            height: 40px;
         }
     }
     </style>
@@ -136,11 +216,30 @@
 <body>
     <div id="banner">
         <h1 id="banner-text">Evergreen</h1>
-        <div align="right" id="font-awesome">
+        <h1 id="banner-text2">Tile and flooring</h1>
+        <div align="center" id="font-awesome">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <a href="contact.html"><i class="fa-solid fa-rectangle-list"></i></a>
             <a href="gallery.html"><i class="fa-solid fa-images"></i></a>
         </div>
+    </div>
+
+    <h1 id="h1">Contact us</h1>
+
+    <div class="form" align="center">
+        <form action="https://formsubmit.co/f47cf52014fc059da48ae2b9cfb3753b" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input id="name" type="text" name="name" placeholder="Name" required>
+
+            <input id="email" type="email" name="email" placeholder="Email" required>
+
+            <input id="phone" type="text" name="phone" placeholder="Phone">
+
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+
+            <button id="a" type="submit">Send</button>
+            <input type="hidden" name="_next" value="https://wwebsite.github.io/websitee">
+        </form>
     </div>
 
 </body>
