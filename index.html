@@ -75,24 +75,46 @@
         position: fixed;
         color: #33bc54;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 80px;
+    }
+    #banner-text2{
+        font-family: 'Bebas Neue', cursive;
+        position: fixed;
+        color: #4fd86f;
+        margin-left: 10px;
+        margin-top: 125px;
     }
     #font-awesome{
         position: fixed;
-        margin-left: 46%;
+        margin-left: 70%;
+        margin-right: 30%;
         margin-top: 10px;
+        display: flex;
+        flex-direction: row;
     }
     .fa-solid{
         font-size: 35px;
         padding: 10px;
         color: #33bc54;
     }
+    #logo{
+        width: 150px;
+        height: 100px;
+        color: #33bc54;
+        position: fixed;
+    }
     @media screen and (min-width:0px) and (max-width:600px){
         #welcome-h1{
             font-size: 40px;
+            margin-top: 200px;
         }
         #banner-text{
             font-size: 30px;
+            margin-top: 55px;
+        }
+        #banner-text2{
+            font-size: 15px;
+            margin-top: 85px;
         }
         #gallery{
             font-size: 20px;
@@ -111,14 +133,21 @@
             font-size: 20px;
             padding: 5px;
         }
+        #logo{
+            width: 100px;
+            height: 70px;
+        }
     }
-
         @media screen and (min-width:600px) and (max-width:1000px){
         #welcome-h1{
             font-size: 45px;
         }
         #banner-text{
             font-size: 35px;
+        }
+        #banner-text2{
+            font-size: 20px;
+            margin-top: 110px;
         }
         #gallery{
             font-size: 25px;
@@ -141,9 +170,13 @@
     </style>
 </head>
 <body>
+    <div id="logo-div">
+        <img id="logo" src="logo.png" alt="">
+    </div>
     <div id="banner">
         <h1 id="banner-text">Evergreen</h1>
-        <div align="center" id="font-awesome">
+        <h1 id="banner-text2">Tile and flooring</h1>
+        <div align="right" id="font-awesome">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <a href="contact.html"><i class="fa-solid fa-rectangle-list"></i></a>
             <a href="gallery.html"><i class="fa-solid fa-images"></i></a>
