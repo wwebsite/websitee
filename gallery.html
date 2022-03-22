@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Evergreen</title>
+    <title>Gallery | Evergreen</title>
     <style>
         @keyframes shake{
             10%, 90% {
@@ -75,7 +75,7 @@
         position: fixed;
         color: #33bc54;
         margin-left: 10px;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     #banner-text2{
         font-family: 'Bebas Neue', cursive;
@@ -97,8 +97,44 @@
         padding: 10px;
         color: #33bc54;
     }
+    #h1{
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 100px;
+    }
+    #gallery-h1{
+        font-size: 100px;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+    }
+    #parallax{
+        height: 1500px;
+        width: 100%;
+        background-image: url('pic1.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: -1500px;
+    }
+    #parallax2{
+        height: 1500px;
+        width: 100%;
+        background-image: url('pic2.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: -500px;
+    }
+    #div{
+        background-color: #3f3f3f;
+        width: 100%;
+        height: 500px;
+    }
+
     @media screen and (min-width:0px) and (max-width:600px){
-        #welcome-h1{
+        #h1{
+            font-size: 40px;
+        }
+        #gallery-h1{
             font-size: 40px;
         }
         #banner-text{
@@ -118,16 +154,26 @@
         #links{
             margin-top: -25px;
         }
-        #welcome-h1{
-            margin-top: -15px;
-        }
         .fa-solid{
             font-size: 20px;
             padding: 5px;
         }
+        #div{
+            height: 250px;
+        }
+        #parallax{
+            height: 600px;
+        }
+        #parallax2{
+            height: 1300px;
+            background-position-x: center;
+        }
     }
         @media screen and (min-width:600px) and (max-width:1000px){
-        #welcome-h1{
+        #h1{
+            font-size: 60px;
+        }
+        #gallery-h1{
             font-size: 45px;
         }
         #banner-text{
@@ -147,12 +193,12 @@
         #links{
             margin-top: -25px;
         }
-        #welcome-h1{
-            margin-top: -15px;
-        }
         .fa-solid{
             font-size: 25px;
             padding: 5px;
+        }
+        #div{
+            height: 350px;
         }
     }
     </style>
@@ -161,11 +207,24 @@
     <div id="banner">
         <h1 id="banner-text">Evergreen</h1>
         <h1 id="banner-text2">Tile and flooring</h1>
-        <div align="right" id="font-awesome">
+        
+        <div align="center" id="font-awesome">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <a href="contact.html"><i class="fa-solid fa-rectangle-list"></i></a>
             <a href="gallery.html"><i class="fa-solid fa-images"></i></a>
         </div>
+    
+    </div>
+    
+    <h1 id="gallery-h1">Gallery</h1>
+    
+    <div id="parallax">
+    </div>
+
+    <div id="div">
+    </div>
+    
+    <div id="parallax2">
     </div>
 </body>
 </html>
