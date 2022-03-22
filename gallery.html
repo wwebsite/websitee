@@ -148,6 +148,21 @@
     hr{
         width: 75%;
     }
+    #footer{
+        height: 500px;
+        width: 100%;
+        background-color: #3f3f3f;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 20px;
+    }
+    #footer-text1{
+        padding: 20px;
+    }
+    #footer-text{
+        padding: 20px;
+    }
 
     @media screen and (min-width:0px) and (max-width:600px){
         #h1{
@@ -178,7 +193,7 @@
             padding: 5px;
         }
         #div{
-            height: 250px;
+            height: 200px;
         }
         #parallax{
             height: 600px;
@@ -190,10 +205,14 @@
             background-position-y: 0px;
         }
         img{
-            margin-top: 50px;
+            margin-top: 15px;
             width: 100px;
             height: 100px;
             margin-right: 25px;
+            border-width: 2px;
+        }
+        #footer{
+            height: 500px;
         }
     }
         @media screen and (min-width:600px) and (max-width:1000px){
@@ -228,12 +247,12 @@
             height: 350px;
         }
         #parallax{
-            height: 1600px;
+            height: 800px;
             background-position-x: 0px;
             background-position-y: 0px;
         }
         #parallax2{
-            height: 1300px;
+            height: 800px;
             background-position-x: center;
             background-position-y: 0px;
         }
@@ -255,9 +274,11 @@
     @media screen and (min-width:1000px) and (max-width: 1360px){
         #parallax{
             background-position-y: 0px;
+            height: 800px;
         }
         #parallax2{
             background-position-y: 0px;
+            height: 800px;
         }
     }
     </style>
@@ -286,6 +307,12 @@
     </div>
     
     <div id="parallax2">
+    </div>
+
+    <div id="footer">
+        <p id="footer-text1">blahblablah</p>
+        <p id="footer-text">blahblablah</p>
+        <p id="footer-text">blahblablah</p>
     </div>
 </body>
 </html>
