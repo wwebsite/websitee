@@ -202,9 +202,30 @@
         #div{
             height: 350px;
         }
+        #parallax{
+            height: 1600px;
+            background-position-x: 0px;
+            background-position-y: 0px;
+        }
         #parallax2{
             height: 1300px;
             background-position-x: center;
+            background-position-y: 0px;
+        }
+    }
+    @media screen and (min-width:1000px) and (max-width: 2020px){
+        #parallax{
+            background-position-y: -500px;
+        }
+        #parallax2{
+            background-position-y: 0px;
+        }
+    }
+    @media screen and (min-width:1000px) and (max-width: 1300px){
+        #parallax{
+            background-position-y: 0px;
+        }
+        #parallax2{
             background-position-y: 0px;
         }
     }
