@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Evergreen</title>
+    <title>Home | Evergreen</title>
     <style>
     #links{
         text-decoration: none;
@@ -58,14 +58,14 @@
         position: fixed;
         color: #33bc54;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 80px;
     }
     #banner-text2{
         font-family: 'Bebas Neue', cursive;
         position: fixed;
         color: #4fd86f;
         margin-left: 10px;
-        margin-top: 55px;
+        margin-top: 125px;
     }
     #font-awesome{
         position: fixed;
@@ -80,74 +80,32 @@
         padding: 10px;
         color: #33bc54;
     }
-    #h1{
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 100px;
+    #logo{
+        width: 150px;
+        height: 100px;
+        color: #33bc54;
+        position: fixed;
     }
-    #gallery-h1{
-        font-size: 100px;
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
+    #paragraph{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 50px;
+        padding: 20px;
+        color: #b1b1b1;
     }
-    h2{
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
-        color: #616161;
-    }
-    hr{
-        width: 75%;
-    }
-    #parallax1{
-        background-image: url('pic1.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-        width: 100%;
-        height: 1500px;
-        background-position: center center;
-    }
-    #parallax2{
-        background-image: url('pic2.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-        width: 100%;
-        height: 1500px;
-        background-position: center center;
-    }
-    #div{
-        width: 100%;
-        height: 500px;
-        background-color: white;
-        border-style: ridge;
-        border-color: #33bc54;
-        border-width: 5px;
-    }
-    #pic3{
-        height: 450px;
-        width: 500px;
-        padding: 10px;
-        border-radius: 500px;
-    }
-    #pic4{
-        height: 450px;
-        width: 500px;
-        padding: 10px;
-        border-radius: 500px;
-    }
-
+    
     @media screen and (min-width:0px) and (max-width:600px){
-        #h1{
+        #welcome-h1{
             font-size: 40px;
-        }
-        #gallery-h1{
-            font-size: 40px;
+            margin-top: 200px;
         }
         #banner-text{
             font-size: 30px;
+            margin-top: 55px;
         }
         #banner-text2{
             font-size: 15px;
-            margin-top: 40px;
+            margin-top: 85px;
         }
         #gallery{
             font-size: 20px;
@@ -159,56 +117,23 @@
         #links{
             margin-top: -25px;
         }
+        #welcome-h1{
+            margin-top: 15px;
+        }
         .fa-solid{
             font-size: 20px;
             padding: 5px;
         }
-        #div{
-            height: 250px;
-            border-style: ridge;
-            border-color: #33bc54;
-            border-width: 5px;
+        #logo{
+            width: 100px;
+            height: 70px;
         }
-        #pic3{
-            height: 100px;
-            width: 125px;
-            border-radius: 125px;
-            margin-top: 50px;
-            border-style: ridge;
-            border-color: #33bc54;
-            border-width: 5px;
-        }
-        #pic4{
-            height: 100px;
-            width: 125px;
-            border-radius: 125px;
-            margin-top: 50px;
-            border-style: ridge;
-            border-color: #33bc54;
-            border-width: 5px;
+        #paragraph{
+            font-size: 20px;
         }
     }
-
-        @media screen and (min-width: 450px) and (max-width: 600px){
-            #pic3{
-                height: 150px;
-                width: 175px;
-                border-radius: 175px;
-                border-width: 1px;
-            }
-            #pic4{
-                height: 150px;
-                width: 175px;
-                border-radius: 175px;
-                border-width: 1px;
-            }
-        }
-
         @media screen and (min-width:600px) and (max-width:1000px){
-        #h1{
-            font-size: 60px;
-        }
-        #gallery-h1{
+        #welcome-h1{
             font-size: 45px;
         }
         #banner-text{
@@ -216,7 +141,7 @@
         }
         #banner-text2{
             font-size: 20px;
-            margin-top: 40px;
+            margin-top: 110px;
         }
         #gallery{
             font-size: 25px;
@@ -228,50 +153,54 @@
         #links{
             margin-top: -25px;
         }
+        #welcome-h1{
+            margin-top: -15px;
+        }
         .fa-solid{
             font-size: 25px;
             padding: 5px;
         }
-        #pic3{
-            height: 200px;
-            width: 250px;
-            border-radius: 250px;
-            margin-top: 100px;
-            }
-        #pic4{
-            height: 200px;
-            width: 250px;
-            border-radius: 250px;
-            margin-top: 100px;
-            }
+        #paragraph{
+            font-size: 35px;
+        }
     }
     </style>
 </head>
 <body>
+    <div id="logo-div">
+        <a href="index.html"> <img id="logo" src="logo.png" alt=""> </a>
+    </div>
     <div id="banner">
         <a href="index.html"> <h1 id="banner-text">Evergreen</h1> </a>
         <a href="index.html"> <h1 id="banner-text2">Tile and flooring</h1>  </a>
-        
-        <div align="center" id="font-awesome">
+        <div align="right" id="font-awesome">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <a href="contact.html"><i class="fa-solid fa-rectangle-list"></i></a>
             <a href="gallery.html"><i class="fa-solid fa-images"></i></a>
         </div>
-    
-    </div>
-    
-    <h1 id="gallery-h1">Gallery</h1>
-    <h2>Examples of our work</h2><hr><br>
-
-    <div id="parallax1">
     </div>
 
-    <div id="div" align="center">
-        <img id="pic3" src="pic3.jpg"> <img id="pic4" src="pic4.jpg">
+    <h1 id="welcome-h1">Welcome</h1>
+
+    <div id="links">
+    <a id="gallery" href="gallery.html">Gallery</a> <a id="contact" href="contact.html">Contact us</a><hr>
     </div>
 
-    <div id="parallax2">
-    </div>
-    
+    <p id="paragraph">
+        Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. 
+        Augue mauris augue neque gravida. Adipiscing elit ut aliquam purus sit amet luctus venenatis.
+        Morbi tristique senectus et netus et malesuada fames. Sagittis id consectetur purus ut faucibus pulvinar elementum.
+        Sed tempus urna et pharetra pharetra. 
+        Platea dictumst quisque sagittis purus sit amet volutpat consequat.
+        Aliquet enim tortor at auctor urna nunc id cursus metus. Duis tristique sollicitudin nibh sit amet. 
+        Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Dolor sit amet consectetur adipiscing elit.
+        Consequat id porta nibh venenatis cras. Imperdiet dui accumsan sit amet nulla facilisi.
+        Maecenas pharetra convallis posuere morbi leo urna molestie.
+        Risus ultricies tristique nulla aliquet enim tortor. Non diam phasellus vestibulum lorem sed.
+    </p>
+
 </body>
 </html>
