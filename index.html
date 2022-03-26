@@ -8,23 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Evergreen</title>
     <style>
-        @keyframes shake{
-            10%, 90% {
-            transform: translate3d(-1px, 0, 0);
-        }
-        
-        20%, 80% {
-            transform: translate3d(2px, 0, 0);
-        }
-
-        30%, 50%, 70% {
-            transform: translate3d(-4px, 0, 0);
-        }
-
-        40%, 60% {
-            transform: translate3d(4px, 0, 0);
-        }
-    }
     #links{
         text-decoration: none;
         text-align: center;
@@ -103,6 +86,13 @@
         color: #33bc54;
         position: fixed;
     }
+    #paragraph{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 50px;
+        padding: 20px;
+        color: #b1b1b1;
+    }
     
     @media screen and (min-width:0px) and (max-width:600px){
         #welcome-h1{
@@ -138,6 +128,9 @@
             width: 100px;
             height: 70px;
         }
+        #paragraph{
+            font-size: 20px;
+        }
     }
         @media screen and (min-width:600px) and (max-width:1000px){
         #welcome-h1{
@@ -167,16 +160,19 @@
             font-size: 25px;
             padding: 5px;
         }
+        #paragraph{
+            font-size: 35px;
+        }
     }
     </style>
 </head>
 <body>
     <div id="logo-div">
-        <img id="logo" src="logo.png" alt="">
+        <a href="index.html"> <img id="logo" src="logo.png" alt=""> </a>
     </div>
     <div id="banner">
-        <h1 id="banner-text">Evergreen</h1>
-        <h1 id="banner-text2">Tile and flooring</h1>
+        <a href="index.html"> <h1 id="banner-text">Evergreen</h1> </a>
+        <a href="index.html"> <h1 id="banner-text2">Tile and flooring</h1>  </a>
         <div align="right" id="font-awesome">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <a href="contact.html"><i class="fa-solid fa-rectangle-list"></i></a>
@@ -189,5 +185,22 @@
     <div id="links">
     <a id="gallery" href="gallery.html">Gallery</a> <a id="contact" href="contact.html">Contact us</a><hr>
     </div>
+
+    <p id="paragraph">
+        Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. 
+        Augue mauris augue neque gravida. Adipiscing elit ut aliquam purus sit amet luctus venenatis.
+        Morbi tristique senectus et netus et malesuada fames. Sagittis id consectetur purus ut faucibus pulvinar elementum.
+        Sed tempus urna et pharetra pharetra. 
+        Platea dictumst quisque sagittis purus sit amet volutpat consequat.
+        Aliquet enim tortor at auctor urna nunc id cursus metus. Duis tristique sollicitudin nibh sit amet. 
+        Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Dolor sit amet consectetur adipiscing elit.
+        Consequat id porta nibh venenatis cras. Imperdiet dui accumsan sit amet nulla facilisi.
+        Maecenas pharetra convallis posuere morbi leo urna molestie.
+        Risus ultricies tristique nulla aliquet enim tortor. Non diam phasellus vestibulum lorem sed.
+    </p>
+
 </body>
 </html>
